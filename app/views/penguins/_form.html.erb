@@ -1,0 +1,101 @@
+<%= form_for(@penguin) do |f| %>
+  <% if @penguin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@penguin.errors.count, "error") %> prohibited this penguin from being saved:</h2>
+
+      <ul>
+      <% @penguin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :personality %><br>
+    <%= f.text_field :personality %>
+  </div>
+  <div class="field">
+    <%= f.label :colour_mum %><br>
+    <%= f.text_field :colour_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :colour_dad %><br>
+    <%= f.text_field :colour_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :colour_own %><br>
+    <%= f.text_field :colour_own %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_colour_mum %><br>
+    <%= f.text_field :belly_colour_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_colour_dad %><br>
+    <%= f.text_field :belly_colour_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_colour_own %><br>
+    <%= f.text_field :belly_colour_own %>
+  </div>
+  <div class="field">
+    <%= f.label :beak_mum %><br>
+    <%= f.number_field :beak_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :beak_dad %><br>
+    <%= f.number_field :beak_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :beak_own %><br>
+    <%= f.number_field :beak_own %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes_mum %><br>
+    <%= f.number_field :eyes_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes_dad %><br>
+    <%= f.number_field :eyes_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :eyes_own %><br>
+    <%= f.number_field :eyes_own %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_mum %><br>
+    <%= f.number_field :belly_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_dad %><br>
+    <%= f.number_field :belly_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :belly_own %><br>
+    <%= f.number_field :belly_own %>
+  </div>
+  <div class="field">
+    <%= f.label :body_mum %><br>
+    <%= f.number_field :body_mum %>
+  </div>
+  <div class="field">
+    <%= f.label :body_dad %><br>
+    <%= f.number_field :body_dad %>
+  </div>
+  <div class="field">
+    <%= f.label :body_own %><br>
+    <%= f.number_field :body_own %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

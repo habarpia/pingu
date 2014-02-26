@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gender: MyString
+  personality: MyString
+  colour_mum: MyString
+  colour_dad: MyString
+  colour_own: MyString
+  belly_colour_mum: MyString
+  belly_colour_dad: MyString
+  belly_colour_own: MyString
+  beak_mum: 1
+  beak_dad: 1
+  beak_own: 1
+  eyes_mum: 1
+  eyes_dad: 1
+  eyes_own: 1
+  belly_mum: 1
+  belly_dad: 1
+  belly_own: 1
+  body_mum: 1
+  body_dad: 1
+  body_own: 1
+
+two:
+  name: MyString
+  gender: MyString
+  personality: MyString
+  colour_mum: MyString
+  colour_dad: MyString
+  colour_own: MyString
+  belly_colour_mum: MyString
+  belly_colour_dad: MyString
+  belly_colour_own: MyString
+  beak_mum: 1
+  beak_dad: 1
+  beak_own: 1
+  eyes_mum: 1
+  eyes_dad: 1
+  eyes_own: 1
+  belly_mum: 1
+  belly_dad: 1
+  belly_own: 1
+  body_mum: 1
+  body_dad: 1
+  body_own: 1

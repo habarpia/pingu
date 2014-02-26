@@ -1,0 +1,67 @@
+<h1>Listing penguins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Personality</th>
+      <th>Colour mum</th>
+      <th>Colour dad</th>
+      <th>Colour own</th>
+      <th>Belly colour mum</th>
+      <th>Belly colour dad</th>
+      <th>Belly colour own</th>
+      <th>Beak mum</th>
+      <th>Beak dad</th>
+      <th>Beak own</th>
+      <th>Eyes mum</th>
+      <th>Eyes dad</th>
+      <th>Eyes own</th>
+      <th>Belly mum</th>
+      <th>Belly dad</th>
+      <th>Belly own</th>
+      <th>Body mum</th>
+      <th>Body dad</th>
+      <th>Body own</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @penguins.each do |penguin| %>
+      <tr>
+        <td><%= penguin.name %></td>
+        <td><%= penguin.gender %></td>
+        <td><%= penguin.personality %></td>
+        <td><%= penguin.colour_mum %></td>
+        <td><%= penguin.colour_dad %></td>
+        <td><%= penguin.colour_own %></td>
+        <td><%= penguin.belly_colour_mum %></td>
+        <td><%= penguin.belly_colour_dad %></td>
+        <td><%= penguin.belly_colour_own %></td>
+        <td><%= penguin.beak_mum %></td>
+        <td><%= penguin.beak_dad %></td>
+        <td><%= penguin.beak_own %></td>
+        <td><%= penguin.eyes_mum %></td>
+        <td><%= penguin.eyes_dad %></td>
+        <td><%= penguin.eyes_own %></td>
+        <td><%= penguin.belly_mum %></td>
+        <td><%= penguin.belly_dad %></td>
+        <td><%= penguin.belly_own %></td>
+        <td><%= penguin.body_mum %></td>
+        <td><%= penguin.body_dad %></td>
+        <td><%= penguin.body_own %></td>
+        <td><%= link_to 'Show', penguin %></td>
+        <td><%= link_to 'Edit', edit_penguin_path(penguin) %></td>
+        <td><%= link_to 'Destroy', penguin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Penguin', new_penguin_path %>
