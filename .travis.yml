@@ -1,10 +1,15 @@
 language: ruby
-
 rvm:
- - 2.0.0
-
+- 2.0.0
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec -fd spec/
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZkqtLzirRDGXfQqyXoGdImNXRYVqWy1LL7jXnNDOoV4riTAghslsT3pWb/tWAKyVbmRB8gW6gmlOpX9xgt13GTuUWweD9808kBBXgjjcBcva0U2yYQSNuEYF0DRw6tw2SdBlAAxEVav1HMEB+1pMwdxvgsAGD8YmxiYQDOIfS8w=
+  app: murmuring-ravine-1856
+  on:
+    repo: habarpia/pingu
